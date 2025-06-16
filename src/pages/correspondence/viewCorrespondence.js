@@ -374,7 +374,7 @@ export default ({ initialRow = [] }) => {
       setFileExtension(fileExtension);
 
       try {
-        const [url, key] = await triggerFunction(fileExtension, folderName);
+        const [url, key] = await triggerFunction(fileExtension, (folderName).trim());
         setUrl1(url); // For the first file
         setKey1(key); // For the first file
         setIsFileSelected(true);
@@ -399,7 +399,7 @@ export default ({ initialRow = [] }) => {
       setFileExtension(fileExtension);
 
       try {
-        const [url, key] = await triggerFunction(fileExtension, folderName);
+        const [url, key] = await triggerFunction(fileExtension, (folderName).trim());
         setUrl2(url); // For the second file
         setKey2(key); // For the second file
         setIsFileSelected(true);

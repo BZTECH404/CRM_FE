@@ -105,7 +105,7 @@ const Comp = () => {
       const fileExtension = file.name;
       setSelectedFile(file);
       setFileExtension(fileExtension);
-      let arr1 = await triggerFunction(fileExtension, folderName)
+      let arr1 = await triggerFunction(fileExtension, (folderName).trim())
       //////////////////////console.log(arr1)
       setUrl(arr1[0]); // Update URL with folderName
       setKey(arr1[1])

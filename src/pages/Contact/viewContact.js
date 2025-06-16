@@ -287,7 +287,7 @@ const Comp= () => {
       const fileExtension = file.name.split('.').pop();
       setSelectedFile(file);
       // setFileExtension(fileExtension);
-      let arr1 = await triggerFunction(fileExtension, name)
+      let arr1 = await triggerFunction(fileExtension, "hi")
       setUrl(arr1[0]); // Update URL with folderName
       setKey(arr1[1])
       // setIsFileSelected(true); // Enable upload button

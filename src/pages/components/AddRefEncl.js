@@ -108,7 +108,7 @@ export default ({ corr, allcorr, setcorr, showModal2, setShowModal2 }) => {
         // setSelectedFile(file);
         // setFileExtension(fileExtension);
 
-        const arr1 = await triggerFunction(fileExtension, corr.projectname);
+        const arr1 = await triggerFunction(fileExtension, (corr.projectname).trim());
         // key=arr1[0]
         // url=arr1[1]
         // setKey(arr1[0])

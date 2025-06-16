@@ -34,7 +34,7 @@ const AddFiles = ({ thisproject, id, setfiles, files, getfiles }) => {
             if (file) {
                 // Read file extension
                 const fileExtension = file.name;
-                const arr1 = await triggerFunction(fileExtension, thisproject.name);
+                const arr1 = await triggerFunction(fileExtension, (thisproject.name).trim());
                 // key=arr1[0]
                 // url=arr1[1]
                 // setKey(arr1[0])

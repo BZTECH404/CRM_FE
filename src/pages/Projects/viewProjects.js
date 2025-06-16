@@ -34,7 +34,7 @@ import History from "./History.js";
 import { getConsolidated, disableConsolidated } from "../../features/consolidatedSlice";
 import ExcelSheetPreviewer from "./ExcelPreviewer.js";
 import ViewBills from "../Billing/viewBills.js";
-import CreateBill from "./createBills.js"
+import CreateBill from "./Invoice/createBills.js"
 
 const Comp = () => {
 

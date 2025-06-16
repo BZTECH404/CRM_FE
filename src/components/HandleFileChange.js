@@ -10,7 +10,7 @@ const handleFileChange = async (event,foldername,setstop) => {
       if (file) {
         // Read file extension
         const fileExtension = file.name;
-        const arr1 = await triggerFunction(fileExtension, foldername);
+        const arr1 = await triggerFunction(fileExtension, foldername.trim());
         // Add arr1[0] and arr1[1] to the newSelectedFiles array
         newSelectedFiles.push([arr1[0], arr1[1], file]);
       }

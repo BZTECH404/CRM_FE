@@ -284,7 +284,7 @@ const Files = ({ files, setfiles, id, thisproject }) => {
                 // setSelectedFile(file);
                 setFileExtension(fileExtension);
 
-                const arr1 = await triggerFunction(fileExtension, thisproject.name);
+                const arr1 = await triggerFunction(fileExtension, (thisproject.name).trim());
                 // key=arr1[0]
                 // url=arr1[1]
                 // setKey(arr1[0])

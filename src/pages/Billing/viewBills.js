@@ -730,7 +730,7 @@ const downloadExcelFile = () => {
         // Read file extension
         const fileExtension = file.name;
         const desiredContact = contacts.find(contact => contact._id == editPerson);
-        const arr1 = await triggerFunction(fileExtension, desiredContact.name);
+        const arr1 = await triggerFunction(fileExtension, (desiredContact.name).trim());
 
         // Add arr1[0] and arr1[1] to the newSelectedFiles array
         newSelectedFiles.push([arr1[0], arr1[1], file]);

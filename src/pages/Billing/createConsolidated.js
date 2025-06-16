@@ -117,7 +117,7 @@ export default () => {
         setSelectedFile(file);
         setFileExtension(fileExtension);
         const projectobj = pnamearr.find(proj => proj._id == pname);
-        const arr1 = await triggerFunction(fileExtension, projectobj.name)
+        const arr1 = await triggerFunction(fileExtension, (projectobj.name).trim())
 
         // Add arr1[0] and arr1[1] to the newSelectedFiles array
         newSelectedFiles.push([arr1[0], arr1[1], file]);
@@ -185,7 +185,7 @@ export default () => {
         const projectobj = pnamearr.find(proj => proj._id == editProject);
 
         try {
-          const res = await triggerFunction(fileExtension, projectobj.name)
+          const res = await triggerFunction(fileExtension, (projectobj.name).trim())
           // //////console.log(res); // Log the response from triggerFunction
           newSelectedFiles.push([res[0], res[1], file]);
           if (tp == "Calculation") {

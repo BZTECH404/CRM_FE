@@ -74,7 +74,7 @@ const Comp = ({ ptbf, handleFetch }) => {
       const fileExtension = file.name;
       setSelectedFile(file);
       setFileExtension(fileExtension);
-      let arr1 = await triggerFunction(fileExtension, folderName)
+      let arr1 = await triggerFunction(fileExtension, (folderName).trim())
       setUrl(arr1[0]); // Update URL with folderName
       setKey(arr1[1])
       setIsFileSelected(true); // Enable upload button

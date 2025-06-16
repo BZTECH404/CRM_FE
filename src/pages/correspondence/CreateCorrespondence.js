@@ -115,7 +115,7 @@ export default () => {
         setSelectedFile(file);
         setFileExtension(fileExtension);
 
-        const arr1 = await triggerFunction(fileExtension, projectname);
+        const arr1 = await triggerFunction(fileExtension, (projectname).trim());
         // key=arr1[0]
         // url=arr1[1]
         // setKey(arr1[0])
@@ -142,7 +142,7 @@ export default () => {
         setSelectedFile(file);
         setFileExtension(fileExtension);
 
-        const arr1 = await triggerFunction(fileExtension, projectname);
+        const arr1 = await triggerFunction(fileExtension, (projectname).trim());
         // key=arr1[0]
         // url=arr1[1]
         // setKey(arr1[0])
